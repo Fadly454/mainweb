@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -17,28 +16,27 @@
 
     <!-- Custom styles for this template -->
     <style>
-        body {
-  padding-top: 5rem;
-}
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
-</style>
-</head>
+      body {
+        padding-top: 5rem;
+      }
+      .starter-template {
+        padding: 3rem 1.5rem;
+        text-align: center;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
 
     <?= $this->include('navbar') ?>
 
     <main role="main" class="container">
 
-       <?= $this->renderSection('content') ?>
+      <?= $this->renderSection('content') ?>
 
     </main><!-- /.container -->
-
-    <script src="<?= base_url('bootsrap-4.0.0/dist/js/bootstrap.min.js') ?>"></script>
     <script src="<?= base_url('jquery-3.6.3.min.js') ?>"></script>
-</body>
-
+    <script src="<?= base_url('bootstrap-4.0.0/dist/js/bootstrap.min.js') ?>"></script>
+    <?= $this->renderSection('script') ?>
+  </body>
 </html>
